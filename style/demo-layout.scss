@@ -1,0 +1,119 @@
+// Style Demo
+
+$c1: #333333;
+$c2: #4D4D4D;
+$c3: #0F4042;
+$c4: #1E8184;
+$c5: #48989B;
+$c6: #5DC0D4;
+$c7: #F8F8F8;
+$c8: #808080;
+*, ::after, ::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+body{
+	font-family: tahoma;
+	font-size: 13px;
+	padding: 0;
+	margin: 0;
+	color: $c8;
+}
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+%font-title{
+	font-family: "Inconsolata", sans-serif;
+}
+.title{
+	@extend %font-title;
+	color: $c1;
+	font-size: 30px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	letter-spacing: 3px;
+	&.white{
+		color: #fff;
+	}
+}
+.sub-title{
+	@extend %font-title;
+	color: $c1;
+	font-size: 18px;
+	&.white{
+		color: #fff;
+	}
+}
+.text-label{
+	display: inline-block;
+	background: #fff;
+	border-radius: 3px;
+	padding: 3px 10px;
+	margin-top: 3px;
+	color: $c5;
+	&.dark{
+		background: $c1;
+		color: $c7;
+	}
+}
+section{
+	text-align: center;
+	padding: 100px 40px;
+	pre, pre.prettyprint{
+		font-size: 16px;
+		width: 100%;
+		margin: 0;
+		text-align: left;
+		border-radius: 3px;
+		border: 1px solid #ccc;
+		padding: 40px 0;
+		color: #000;
+		background: #eee;
+		overflow: auto;
+	}
+}
+.section1{
+	// color: $c8;
+}
+.section2{
+	.title{
+		color: #fff;
+	}
+	h3{
+		color: $c3;
+		font-size: 26px;
+		// font-weight: normal;
+		margin-bottom: 0;
+	}
+	span{
+		@extend .text-label;
+	}
+	color: rgba(255,255,255,0.7);
+	background: $c4;
+}
+.section3{
+	background: $c1;
+}
+.box-grid-alignment{
+	margin: 0 0 40px 0;
+	height: 100px;
+	background: $c1;
+	&.hor{
+		height: auto;
+	}
+}
+.item{
+	margin: 10px 0;
+	padding: 10px;
+	background: $c4;
+	color: #fff;
+	font-size: 13px;
+	// border-radius: 3px;
+}
