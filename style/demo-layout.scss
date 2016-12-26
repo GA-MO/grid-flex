@@ -117,3 +117,13 @@ section{
 	font-size: 13px;
 	// border-radius: 3px;
 }
+.button{
+	display: inline-block;
+	text-decoration: none;
+	font-family: "Inconsolata", sans-serif;
+	background: $c4;
+	color: #fff;
+	padding: 10px 50px;
+	border-radius: 3px;
+	font-size: 16px;
+}
