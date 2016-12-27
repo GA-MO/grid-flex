@@ -8,10 +8,12 @@ $c5: #48989B;
 $c6: #5DC0D4;
 $c7: #F8F8F8;
 $c8: #808080;
+
 *, ::after, ::before {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 body{
 	font-family: tahoma;
