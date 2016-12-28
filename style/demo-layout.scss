@@ -123,9 +123,11 @@ section{
 	display: inline-block;
 	text-decoration: none;
 	font-family: "Inconsolata", sans-serif;
-	background: $c4;
+	background: #0f4042;
 	color: #fff;
-	padding: 10px 50px;
-	border-radius: 3px;
-	font-size: 16px;
+	padding: 15px 50px;
+  border-radius: 50px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 180px;
 }
