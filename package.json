@@ -1,8 +1,8 @@
 {
   "name": "gridflex",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Grid system with flexbox",
-  "main": "src/styles/girdflex.css",
+  "main": "lib/girdflex.css",
   "repository": {
     "url": "https://github.com/GA-MO/gridflex/",
     "type": "git"
@@ -22,10 +22,7 @@
     "dev": "gulp",
     "build": "gulp build"
   },
-  "files": [
-    "src/styles/girdflex.css",
-    "src/styles/scss/girdflex.scss"
-  ],
+  "file": "lib/girdflex.css",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.9.10",

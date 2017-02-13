@@ -142,12 +142,13 @@ function styleDeploySetting(filename) {
                 .pipe(concat(''+filename+'.css'))
                 .pipe(minifyCSS())
                 //where to save our final, compressed css file
-                .pipe(gulp.dest('demo/styles'));
+                .pipe(gulp.dest('demo/styles'))
+                .pipe(gulp.dest('lib'));
 }
 
 //compiling our SCSS files for deployment
 gulp.task('styles-deploy', function() {
-    return styleDeploySetting('demo')
+    return styleDeploySetting('gridflex')
 });
 
 //compiling our SCSS files for deployment
@@ -188,13 +189,15 @@ gulp.task('html-deploy', function() {
     gulp.src(['src/styles/*.css', '!src/styles/demo-layout.css', '!src/styles/gridflex.css'])
         //prevent pipe breaking caused by errors from gulp plugins
         .pipe(plumber())
-        .pipe(gulp.dest('demo/styles'));
+        .pipe(gulp.dest('demo/styles'))
+        .pipe(gulp.dest('lib'));
 });
 
 //cleans our gridflex directory in case things got deleted
 gulp.task('clean', function() {
     return shell.task([
-      'rm -rf demo'
+      'rm -rf demo',
+      'rm -rf lib'
     ]);
 });
 
@@ -202,6 +205,7 @@ gulp.task('clean', function() {
 gulp.task('scaffold', function() {
   return shell.task([
       'mkdir demo',
+      'mkdir lib',
       // 'mkdir demo/fonts',
       // 'mkdir demo/images',
       // 'mkdir demo/scripts',
