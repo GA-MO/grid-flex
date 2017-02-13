@@ -1,6 +1,3 @@
 node_modules
 .sass-cache
-.gulpfile.js
-app
 .DS_Store
-app/styles/styles.css
