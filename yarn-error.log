@@ -1,0 +1,56 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Fuckdev\Downloads\php-5.6.25-nts-Win32-VC11-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Yarn\bin;C:\apache-maven-3.3.9\bin;%{JAVA_HOME}\bin;%{JAVA_HOME}\lib\dt.jar;%{JAVA_HOME}\lib\tools.jar;C:\Users\Fuckdev\AppData\Roaming\npm;C:\Users\Fuckdev\AppData\Local\atom\bin;C:\Users\Fuckdev\AppData\Local\Microsoft\WindowsApps;C:\Users\Fuckdev\AppData\Roaming\Composer\vendor\bin;C:\Users\Fuckdev\AppData\Local\Yarn\.bin;
+
+Yarn version: 
+  0.16.1
+
+Node version: 
+  5.2.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "YourProject",
+    "version": "0.0.1",
+    "description": "Description of your project",
+    "scripts": {
+      "dev": "gulp",
+      "build": "gulp deploy"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "browser-sync": "^2.9.10",
+      "gulp": "^3.9.0",
+      "gulp-autoprefixer": "^3.0.2",
+      "gulp-concat": "^2.6.0",
+      "gulp-imagemin": "^2.3.0",
+      "gulp-minify-css": "^1.2.1",
+      "gulp-sass": "^2.0.4",
+      "gulp-sequence": "^0.4.1",
+      "gulp-shell": "^0.5.0",
+      "gulp-sourcemaps": "^1.6.0",
+      "gulp-uglify": "^1.4.1",
+      "gulp-util": "^3.0.6",
+      "gulp-plumber": "^1.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+bower manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: getaddrinfo ENOENT registry.yarnpkg.com:443
+      at Object.exports._errnoException (util.js:856:11)
+      at errnoException (dns.js:32:15)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:78:26)

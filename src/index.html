@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gridflex</title>
+	<meta name="description" content="Responsive Grid layout with SCSS and Display flex">
+	<link rel="stylesheet" type="text/css" href="styles/gridflex.css">
+	<link rel="stylesheet" type="text/css" href="styles/demo-layout.css">
+</head>
+<body>
+	<section class="section1">
+		<div class="title">GRIDFLEX</div>
+		<p>Responsive layout with Grid system using Flexbox (v.1.0)</p>
+		<p><b>A Project By GAMO</b></p>
+		<a href="https://github.com/GA-MO/gridflex/archive/master.zip" class="button">Download</a>
+		<a href="https://github.com/GA-MO/gridflex" class="button">Github</a>
+	</section>
+	<section class="section2">
+		<div class="container">
+			<div class="title">Grid Breakpoints</div>
+			<p>Add class to HTML like this <span>.D-6</span> .{classname}-{column}</p>
+			<div class="row">
+				<div class="SM">
+					<h3>D</h3>
+					<p>Desktop<br /><span>100%</span></p>
+				</div>
+				<div class="SM">
+					<h3>L</h3>
+					<p>Laptop<br /><span>1200px</span></p>
+				</div>
+				<div class="SM">
+					<h3>T</h3>
+					<p>Tablet<br /><span>992px</span></p>
+				</div>
+				<div class="SM">
+					<h3>M</h3>
+					<p>Mobile<br /><span>768px</span></p>
+				</div>
+				<div class="SM">
+					<h3>SM</h3>
+					<p>Small Mobile<br /><span>568px</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section3">
+		<div class="title white">Auto layout</div>
+		<p>Layout with Flexbox just add only classname without number. <br />Columns will be full width when each breackpoints are active with CSS media query</p>
+		<br />
+		<div class="container">
+			<div class="row grid">
+				<div class="M"><div class="item">M</div></div>
+				<div class="M"><div class="item">M</div></div>
+				<div class="M"><div class="item">M</div></div>
+			</div>
+		</div>
+		
+		<!-- 	CODE -->
+		<div class="container">
+		<pre>
+		<div class="container">
+		  <div class="row">
+		    <div class="M">...</div>
+		    <div class="M">...</div>
+		    <div class="M">...</div>
+		  </div>
+		</div></pre>
+		</div>
+		<!-- 	CODE -->
+		
+	</section>
+	<section class="section4">
+		<div class="container">
+			<div class="title">Grid alignment</div>
+			<p>Use the flexbox alignment utilities to align columns.</p>
+			<br />
+			<br />
+			<div class="text-left">
+				<div class="sub-title">Vertical align seft (Column)</div>
+				<p>Add below class into column to vertically align seft.</p>
+				<div class="row columns-middle">
+					<div class="D-12">
+						<div class="row box-grid-alignment columns-top">
+							<div class="D-4 vertical-top"><div class="item">.vertical-top</div></div>
+							<div class="D-4 vertical-middle"><div class="item">.vertical-middle</div></div>
+							<div class="D-4 vertical-bottom"><div class="item">.vertical-bottom</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+		<!-- 	CODE -->
+		<pre>
+		<div class="container">
+		  <div class="row">
+		    <div class="D-4 vertical-top">...</div>
+		    <div class="D-4 vertical-middle">...</div>
+		    <div class="D-4 vertical-bottom">...</div>
+		  </div>
+		</div></pre>
+		<!-- 	CODE -->
+		
+			<br />
+			<br />
+			<div class="text-left">
+				<div class="sub-title">Vertical align</div>
+				<p>Add below class into row to vertically align all columns.</p>
+				<div class="row columns-middle">
+					<div class="D-4 SM-12">
+						<div class="text-label dark">.columns-top</div>
+						<br /><br />
+						<div class="row box-grid-alignment columns-top">
+							<div class="D-4"><div class="item"></div></div>
+							<div class="D-4"><div class="item"></div></div>
+							<div class="D-4"><div class="item"></div></div>
+						</div>
+					</div>
+					<div class="D-4 SM-12">
+						<div class="text-label dark">.columns-middle</div>
+						<br /><br />
+						<div class="row box-grid-alignment columns-middle">
+							<div class="D-4"><div class="item"></div></div>
+							<div class="D-4"><div class="item"></div></div>
+							<div class="D-4"><div class="item"></div></div>
+						</div>
+					</div>
+					<div class="D-4 SM-12">
+						<div class="text-label dark">.columns-bottom</div>
+						<br /><br />
+						<div class="row box-grid-alignment columns-bottom">
+							<div class="D-4"><div class="item"></div></div>
+							<div class="D-4"><div class="item"></div></div>
+							<div class="D-4"><div class="item"></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+						
+		<!-- 	CODE -->
+		<pre>
+		<div class="container">
+		  <div class="row columns-top">
+		    <div class="D-4">...</div>
+		    <div class="D-4">...</div>
+		    <div class="D-4">...</div>
+		  </div>
+		</div></pre>
+		<!-- 	CODE -->
+			
+			<br />
+			<br />
+			<div class="text-left">
+				<div class="sub-title">Horizontal alignment</div>
+				<p>Add below class into row to horizontaly align all columns.</p>
+				<div class="row columns-middle">
+					<div class="D-6 SM-12">
+						<div class="text-label dark">.columns-left</div>
+						<br /><br />
+						<div class="row box-grid-alignment hor columns-left">
+							<div class="D-2"><div class="item"></div></div>
+							<div class="D-2"><div class="item"></div></div>
+							<div class="D-2"><div class="item"></div></div>
+						</div>
+					</div>
+					<div class="D-6 SM-12">
+						<div class="text-label dark">.columns-center</div>
+						<br /><br />
+						<div class="row box-grid-alignment hor columns-center">
+							<div class="D-2"><div class="item"></div></div>
+							<div class="D-2"><div class="item"></div></div>
+							<div class="D-2"><div class="item"></div></div>
+						</div>
+					</div>
+					<div class="D-6 SM-12">
+						<div class="text-label dark">.columns-right</div>
+						<br /><br />
+						<div class="row box-grid-alignment hor columns-right">
+							<div class="D-2"><div class="item"></div></div>
+							<div class="D-2"><div class="item"></div></div>
+							<div class="D-2"><div class="item"></div></div>
+						</div>
+					</div>
+					<div class="D-6 SM-12">
+						<div class="text-label dark">.columns-between</div>
+						<br /><br />
+						<div class="row box-grid-alignment hor columns-between">
+							<div class="D-2"><div class="item"></div></div>
+							<div class="D-2"><div class="item"></div></div>
+							<div class="D-2"><div class="item"></div></div>
+						</div>
+					</div>
+					<div class="D-6 SM-12">
+						<div class="text-label dark">.columns-around</div>
+						<br /><br />
+						<div class="row box-grid-alignment hor columns-around">
+							<div class="D-2"><div class="item"></div></div>
+							<div class="D-2"><div class="item"></div></div>
+							<div class="D-2"><div class="item"></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+					
+						
+		<!-- 	CODE -->
+		<pre>
+		<div class="container">
+		  <div class="row columns-center">
+		    <div class="D-4">...</div>
+		    <div class="D-4">...</div>
+		    <div class="D-4">...</div>
+		  </div>
+		</div></pre>
+		<!-- 	CODE -->
+			
+		</div>
+	</section>
+	<section class="section3">
+		<div class="title white">Grid Order</div>
+		<p>Flexbox utilities for controlling the visual order of your content. <br />Add class to HTML like this <span class="text-label">.M-order-2</span> .{classname}-order-{order number}</p>
+		<br />
+		<div class="container">
+			<div class="row">
+				<div class="D-4 M-order-3"><div class="item">1 change to 3</div></div>
+				<div class="D-4 M-order-1"><div class="item">2 change to 1</div></div>
+				<div class="D-4 M-order-2"><div class="item">3 change to 2</div></div>
+			</div>
+			
+		<!-- 	CODE -->
+		<pre>
+		<div class="container">
+		  <div class="row">
+		    <div class="D-4 M-order-3">...</div>
+		    <div class="D-4 M-order-1">...</div>
+		    <div class="D-4 M-order-2">...</div>
+		  </div>
+		</div></pre>
+		<!-- 	CODE -->
+		</div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+		$('pre').each(function(){
+			var currentHTML = $(this).html().replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+			$(this).html(currentHTML)
+		})
+	</script>
+</body>
+</html>
