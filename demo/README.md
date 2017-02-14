@@ -5,16 +5,17 @@ gridflex.css is a lightweight, responsive Grid layout with Display flex.
 ### Getting started
 
 Get started with gridflex in your projects. You can either manually install or use NPM.
-#### Install manually
+
+### Install manually
 Download the compiled and minified [gridflex CSS file](https://github.com/GA-MO/gridflex/tree/master/lib).
 
-#### Install with CDN
+### Install with CDN
 
 ```
 https://cdn.rawgit.com/GA-MO/gridflex/2ef49dfb/lib/gridflex.css
 ```
 
-#### Install with NPM
+### Install with NPM
 
 ```
 $ npm install gridflex --save
