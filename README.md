@@ -20,7 +20,11 @@ https://cdn.rawgit.com/GA-MO/gridflex/2ef49dfb/lib/gridflex.css
 ```
 $ npm install gridflex --save
 ```
+After install, you'll need to include the CSS file
 
+```
+import 'gridflex/lib/gridflex.css';
+```
 And include it in your website or Web app &lt;head&gt; part.
 
 ```

@@ -1,6 +1,6 @@
 {
   "name": "gridflex",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Grid system with flexbox",
   "main": "lib/girdflex.css",
   "repository": {
